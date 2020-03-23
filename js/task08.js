@@ -3,3 +3,27 @@
 
    - Create an empty array and push all entered ages by promt in that array
    - Write "oldest person is age", "yougnest person is age", "the average age is age" by using console */
+
+function task08() {
+  const peoplesAge = [];
+  let amount = parseInt(prompt("Enter the number of people"));
+  for (let i = 0; i < amount; i++) {
+    peoplesAge[i] = parseInt(prompt("Enter peoples age"));
+    peoplesAge.push(peoplesAge);
+  }
+  //method that will show our oldest person
+  peoplesAge.sort(function(a, b) {
+    return b - a;
+  });
+  alert("The oldest person age is " + peoplesAge[0]);
+  //method that will show our youngest person
+  peoplesAge.sort(function(a, b) {
+    return a - b;
+  });
+  alert("The youngest person age is " + peoplesAge[0]);
+  //method for average age
+  let avg = peoplesAge.reduce(function(total, num) {
+    return (total + num) / amount;
+  });
+  alert("The average age is: " + avg);
+}
