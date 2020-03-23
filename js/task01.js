@@ -5,20 +5,18 @@
    Hint 1: Ask "How old are you?" by prompt
    Hint 2: Write console messages / alert messages "You can drive", "You can not drive", "need to start again" if the client enter a character! */
 
-/* function driver() {
+function task01() {
   let age = prompt("How old are you?");
-  console.log(age);
   if (age > 18) {
-    console.log(`You are ${age} years old, so you can drive!`);
+    alert(`You are ${age} years old, so you can drive!`);
   } else if (age < 18) {
-    console.log(`You are ${age} years old, so you can not drive!`);
+    alert(`You are ${age} years old, so you can not drive!`);
   } else {
-    console.log("Enter a valid age");
+    alert("Enter a valid age");
   }
 }
-driver(); */
 
-class Driver {
+/* class Driver {
   constructor(age) {
     this.age = age;
   }
@@ -34,4 +32,4 @@ class Driver {
 }
 
 let newDriver = new Driver(prompt("How old are you?"));
-newDriver.drive();
+newDriver.drive(); */
