@@ -6,14 +6,17 @@
    - Add a button and when you click the button show your random value inside the new array (because of map)
    - Write your normal array above the button inside the page */
 
-let myArray = [2, 5, 34, 76, 12, 8];
-console.log(myArray);
+function task05() {
+  let myArray = [2, 5, 34, 76, 12, 8];
+  alert("Initial Array is: " + myArray);
 
-let myDoubleArray = myArray.map(doubleFunc);
+  let myDoubleArray = myArray.map(doubleFunc);
 
-function doubleFunc(value) {
-  return value * 2;
+  function doubleFunc(value) {
+    return value * 2;
+  }
+  let render = function() {
+    alert("My Double Array is " + myDoubleArray);
+  };
+  render();
 }
-let render = function() {
-  console.log(myDoubleArray);
-};
