@@ -7,7 +7,7 @@
 
 function task01() {
   let age = prompt("How old are you?");
-  if (age > 18) {
+  if (age >= 18) {
     alert(`You are ${age} years old, so you can drive!`);
   } else if (age < 18) {
     alert(`You are ${age} years old, so you can not drive!`);

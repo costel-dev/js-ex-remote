@@ -4,8 +4,6 @@
    - Ask "How many students are there in the class" and 'what is student #2 name' by prompt */
 
 function task06() {
-  alert("How many students are in FbW10? Press 'ENTER' to see the answer!");
-
   const fbw10 = [
     { firstN: "Costel", secondN: "Cuconoiu" },
     { firstN: "Cristian", secondN: "Rogojina" },
@@ -15,14 +13,20 @@ function task06() {
     { firstN: "Daniel", secondN: "Bakare" },
     { firstN: "Kalu", secondN: "Annas" }
   ];
-  alert(
-    "FbW10 has " +
-      fbw10.length +
-      " students!" +
-      " Press 'ENTER' to see who they are:"
-  );
-
   fbw10.forEach(element => {
-    alert(element.firstN + " " + element.secondN);
+    alert("Our students are: " + element.firstN + " " + element.secondN);
   });
+
+  function check() {
+    let answer = prompt(
+      "What you want to do? Type '1' to see how many students are in FbW10 or Type '2' to see student #2 name"
+    );
+
+    if (answer == 1) {
+      alert("FbW10 has " + fbw10.length + " students!");
+    } else if (answer == 2) {
+      alert("Our student #2 name is: " + fbw10[1].secondN);
+    } else check();
+  }
+  check();
 }

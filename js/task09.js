@@ -3,7 +3,7 @@
 
 function task09() {
   let password = prompt("Enter your password");
-  let checkNumber = /\d/g;
+  let checkNumber = /\d/g; // this will check if our string contains digits
   if (
     password.length >= 5 &&
     password.length <= 20 &&
