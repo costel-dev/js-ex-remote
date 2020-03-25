@@ -8,8 +8,7 @@ function task08() {
   const peoplesAge = [];
   let amount = parseInt(prompt("Enter the number of people"));
   for (let i = 0; i < amount; i++) {
-    peoplesAge[i] = parseInt(prompt("Enter peoples age"));
-    peoplesAge.push(peoplesAge);
+    peoplesAge.push(parseInt(prompt("Enter peoples age")));
   }
   alert("Our array now is: " + peoplesAge);
   //method for average age
