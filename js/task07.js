@@ -8,5 +8,5 @@ function task07() {
   let avg = task07Array.reduce(function(total, num) {
     return (total + num) / task07Array.length;
   });
-  alert(avg);
+  alert("The average number our array is: " + avg);
 }

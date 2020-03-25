@@ -11,6 +11,12 @@ function task08() {
     peoplesAge[i] = parseInt(prompt("Enter peoples age"));
     peoplesAge.push(peoplesAge);
   }
+  alert("Our array now is: " + peoplesAge);
+  //method for average age
+  let avg = peoplesAge.reduce(function(total, num) {
+    return (total + num) / peoplesAge.length;
+  });
+  alert("The average age is: " + avg);
   //method that will show our oldest person
   peoplesAge.sort(function(a, b) {
     return b - a;
@@ -21,9 +27,4 @@ function task08() {
     return a - b;
   });
   alert("The youngest person age is " + peoplesAge[0]);
-  //method for average age
-  let avg = peoplesAge.reduce(function(total, num) {
-    return (total + num) / amount;
-  });
-  alert("The average age is: " + avg);
 }

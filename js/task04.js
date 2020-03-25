@@ -13,7 +13,7 @@ function task04() {
     task04Array.sort(function(a, b) {
       return b - a;
     });
-    alert(task04Array[0]);
+    alert("The bigest number of my array is: " + task04Array[0]);
   }
   checkArray();
 }
