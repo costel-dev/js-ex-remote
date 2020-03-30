@@ -12,9 +12,10 @@ function task08() {
   }
   alert("Our array now is: " + peoplesAge);
   //method for average age
-  let avg = peoplesAge.reduce(function(total, num) {
-    return (total + num) / peoplesAge.length;
-  });
+  let avg =
+    peoplesAge.reduce(function(total, num) {
+      return total + num;
+    }) / peoplesAge.length;
   alert("The average age is: " + avg);
   //method that will show our oldest person
   peoplesAge.sort(function(a, b) {

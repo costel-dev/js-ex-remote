@@ -4,9 +4,11 @@
    - Numbers then can be added from prompt and new average given */
 
 function task07() {
-  let task07Array = [23, 34, 1, 56, 90];
-  let avg = task07Array.reduce(function(total, num) {
-    return (total + num) / task07Array.length;
-  });
+  let task07Array = [4, 25, 35, 67, 120];
+  let avg =
+    task07Array.reduce(function(total, num) {
+      return total + num;
+    }) / task07Array.length;
+
   alert("The average number our array is: " + avg);
 }
