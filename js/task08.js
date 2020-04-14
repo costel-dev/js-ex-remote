@@ -28,3 +28,5 @@ function task08() {
   });
   alert("The youngest person age is " + peoplesAge[0]);
 }
+
+
